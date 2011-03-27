@@ -1,0 +1,310 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  background: url(../images/fundo-laranja-pontilhado.jpg) repeat center top;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+body {
+  color:white;
+  font-size:12px;
+  font-family: Georgia,"Times New Roman",Times,serif;
+}
+
+body .wrapper {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+body p {
+  text-shadow: 0 1px 1px white;
+  color: #62666C
+}
+
+h1 {
+  color: #4C4C4C;
+  font-size: 35px;
+  text-shadow: 1px 1px white;
+}
+
+
+h1.section_title {  
+  font-family: Georgia,"Times New Roman",Times,serif;
+  font-style: italic;
+  margin: 25px 0 50px 0;
+}
+
+
+.text_white {
+  color: #fff;
+}
+
+.text_red {
+  color: #9C180C;
+}
+
+
+
+/********* SITE_MENU_AREA **********/
+#site_menu {
+  width: 460px;
+  display: block;
+  float: left;
+  margin-top: 10px;
+  margin-left: 95px;
+  font-family: "ff-dax-web-pro-1","ff-dax-web-pro-2",Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  height: 105px;
+  font-weight: bold;
+}
+
+#site_menu ul li {
+  float: left;
+  list-style: none;
+}
+
+#site_menu ul li.current {
+  margin: 0px;
+  height: 65px;
+  background: url(../images/selected.png) no-repeat scroll center center transparent;
+}
+
+#site_menu ul li a {
+  padding: 5px 10px 5px 10px;
+  color: #ed7625;
+  text-decoration: none;
+  text-shadow: #cb7506 0px 1px 1px;
+  text-transform: uppercase;
+  display: block;
+}
+
+#site_menu ul li.current a {
+  color: #fff;
+}
+
+
+/********* HOME_AREA **********/
+#header {
+  margin: 0px;
+  position: fixed;
+  width: 100%;
+  min-width: 940px;
+  top: 0px;
+  height: 37px;
+  background-color: #000;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 0 6px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 6px 0;
+  -o-box-shadow: rgba(0, 0, 0, 0.5) 0 0 6px 0;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 6px 0;
+  /*border-bottom: 1px solid #FA1; */
+  z-index: 999;
+}
+
+body #home{
+  padding-top: 60px;
+  height: 600px;
+  background:url(../images/fundo-laranja.jpg) repeat fixed center top #fc9b2a;
+}
+
+#home h1.slogan {
+  color: #000;
+  font-size: 100px;
+  text-shadow: 2px 2px #FFDF80;
+  font-weight: bold;
+  line-height: 120px;
+  font-family: 'Helvetica Neue',Arial,Helvetica,Geneva,sans-serif;
+}
+
+#home h2 {
+  color: #7f1a11;
+  font-size: 20px;
+  line-height: 22px;
+  margin: 35px 0 10px;
+  text-shadow: 0 1px 0 #FFDF80;
+  font-style: italic;
+  font-family: Georgia,"Times New Roman",Times,serif;
+  font-weight: normal;
+  word-spacing: 0.1em;
+}
+
+#home a {
+  font-size: 20px;
+  color: #000;
+}
+
+#home a:hover {
+  text-shadow: 0 0 8px rgba(255,255, 255, 2); /* TODO: colocar a cor certa e sobre :hover*/
+    color: #fff;
+}
+
+/********* CLIENTES_AREA **********/
+body #clientes{
+  padding-top: 60px;  
+  height: 600px;  
+  background:url(../images/fundo-cinza-claro.jpg) repeat fixed center top #d7d6d5;
+}
+#clientes_top {
+  background: url(../images/topo-clientes.jpg) repeat-x center top;
+  height: 9px;
+}
+
+	/* Clients Showcase list */
+	#clientes-list {
+	  list-style: none outside none;
+	  margin-top: 20px;
+	  width: 960px;  
+	}
+
+	#clientes_wrapper_info ul li {
+	  display: inline;
+	  float: left;
+	  height: 155px;
+	  width: 320px;
+	}
+
+	#clientes_wrapper_info ul li img {
+	  display: block;
+	}
+
+
+/********* PORTIFOLIO_AREA **********/
+body #portifolio {
+  padding-top: 60px;  
+  background-color: #ebece6;
+}
+
+#portifolio_top {
+  background: url(../images/topo-listras-degrade.jpg) repeat-x center bottom;
+  height: 10px;
+}
+	/* Portifolio Showcase list */
+	#portifolio_showcase_info p{
+	  padding-top: 5px;
+      word-spacing: 0.1em;
+	  clear:left;
+	}
+
+	#portfolio-list {
+	  list-style: none outside none;
+	  margin-top: 20px;
+	  width: 960px;  
+	}
+
+	#portifolio_showcase_info ul li {
+	  display: inline;
+	  float: left;
+	  height: 335px;
+	  width: 320px;
+	}
+
+	#portifolio h3.portfolio_title_small {
+	  font-weight: bold;
+	  color: #151515;
+	  text-transform:uppercase;
+	  text-shadow: 0 1px 0 #FFF;
+	}
+	
+	ul#portfolio-list li section {
+	  display: block;
+	  height: 280px;
+	  margin-left: 5px;
+	  padding: 10px 10px 30px 0;
+	  text-align: left;
+	  width: 285px;
+	}
+	
+	ul#portfolio-list li p.portifolio_tags {
+	  font-weight: bold;
+	  color: #A0A0A0;
+	  text-transform:uppercase;
+	  text-shadow: 0 1px 1px #fff;
+	  font-size: 10px;
+	  padding-top: 5px;
+	}
+	
+	ul#portfolio-list li section a {
+	  font-weight: bold;
+	  color: #000;
+	  font-style: italic;
+	  text-shadow: 0 1px 1px white;
+	}
+
+	ul#portfolio-list li section a:hover {
+	  color: #7f1a11;
+	}
+	
+	
+/********* CONTATO_AREA **********/
+body #contato {
+  padding-top: 20px;  
+  background-color: #FAC74D;
+  height: 280px;  
+  background: url(../images/fundo-laranja-pontilhado.jpg) repeat center top;
+}
+
+#contato_top {
+  background: url(../images/topo-sombra-transparente.png) repeat-x scroll center top transparent;
+  height: 17px;  
+}
+
+#contato h1.section_title {
+  color: #d36707;
+}
+
+#contato p {
+  font-size:16px;
+  color: #000;
+  text-shadow: 0 1px 1px white;
+  display: block;
+}
+
+#contato a {
+  font-weight: bold;
+  color: #000;
+  text-shadow: 0 1px 1px white;
+}
+
+#contato a:hover {
+  color: #fff;
+}
+
+
+/********* FOOTER_AREA **********/
+body #footer {
+  padding-top: 10px;  
+  background-color: black;
+  height:40px;
+}
+
+#footer_top {
+  background-attachment: scroll;
+  background-image: url(../images/topo-rodape.png) repeat-x center top;
+  height: 29px;
+}
+
+#footer p {
+  color: #c1c1c1;
+  text-shadow: 0 0px 1px #f1f1f1;
+  font-size: 9px;
+}
