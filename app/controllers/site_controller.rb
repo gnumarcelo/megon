@@ -6,6 +6,7 @@ class SiteController < ApplicationController
 
   def contact
     SiteMailer.contact(params).deliver
+    redirect_to :action => 'index'
   end
 
 end
