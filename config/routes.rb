@@ -1,7 +1,7 @@
 Megon::Application.routes.draw do
   get "/:lang", :controller => :site, :action => :index
   post "/contact", :controller => :site, :action => :contact
-  root :to => "site#index"
+  root :to => "site#set_default_locale"
 
 
 

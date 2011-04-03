@@ -8,5 +8,9 @@ class SiteController < ApplicationController
     SiteMailer.contact(params).deliver
     redirect_to :action => 'index'
   end
+  
+  def set_default_locale
+    redirect_to '/pt'
+  end
 
 end
