@@ -1,5 +1,10 @@
 Megon::Application.routes.draw do
+  get "/:lang", :controller => :site, :action => :index
+  post "/contact", :controller => :site, :action => :contact
   root :to => "site#index"
+
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

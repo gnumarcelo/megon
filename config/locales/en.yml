@@ -2,4 +2,55 @@
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  header:
+    nav:
+      home: "Home"
+      clients: "Clients"
+      portfolio: "Portfolio"
+      contact: "Contact"
+
+  home:
+    slogan: "TURNING IDEAS INTO BUSINESS"
+    what_we_do: "We are agile and we do web solutions to help you achieve your goals using Java, Ruby on Rails and JavaScripts."
+    contact_us: "If you need web apps, hotsites or web research, <a id='to_contact' href='#'>contact us.</a>"
+
+  clients:
+    title: "Some of our clients"
+
+  portfolio:
+    title: "Take a look in some of our amazing projects"
+    work:
+      abril_title: "Nacional Abril magazine research"
+      abril_desc: "Market research and customers behavior research, winner of ABEMD award."
+
+      claudia_title: "Claudia magazine research"
+      claudia_desc: "Market research for the Claudia magazine."
+
+      exame_title: "Exame magazine research"
+      exame_desc: "Market research and customers behavior research for the Exam magazine."
+
+      listen_title: "ListenToMyApp.com Web App"
+      listen_desc: "Web application to send monitoring events from your web app."
+      listen_visit: "Visit the site."
+
+      eletter_title: "e-Letter"
+      eletter_desc: "Web application to send and monitoring mail marketing campaigns."
+
+      assinatura_title: "Sistema de Assinaturas"
+      assinatura_desc: "Web application to manage magazine subscriptions."
+ 
+      qrodas_title: "Hotsite Quatro Rodas Experience magazine"
+      qrodas_desc: "Hotsite de promote the Quatro Rodas Experience event."
+
+      gloss_title: "Hotsite Gloss magazine"
+      gloss_desc: "Hotsite to launch Gloss magazine."
+
+      veja_title: "Hotsite Veja SP magazine"
+      veja_desc: "Hotsite to promote Veja SP magazine, in events taking place in Campos do Jordão and Riviera de São Lourenço."
+
+      consulado_title: "Hotsite Consulate of Spain in Brazil"
+      consulado_desc: "Hotsite to attract new tourists to Consulate of Spain in Brazil"
+
+  footer:
+    since: "2011 - 11 years"
+    city: "Sao Paulo - Brazil"

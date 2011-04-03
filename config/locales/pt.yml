@@ -1,0 +1,61 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+pt:
+  header:
+    nav:
+      home: "Home"
+      clients: "Clientes"
+      portfolio: "Portfolio"
+      contact: "Contato"
+
+  home:
+    slogan: "TRANSFORMAMOS SUAS IDÉIAS EM NEGÓCIOS"
+    what_we_do: "Criamos soluções web para ajudar você a atingir seus objetivos, utilizando Java, Ruby on Rails e JavaScript de forma ágil."
+    contact_us: "Se você precisa de aplicações web, hotsite ou pesquisa, <a id='to_contact' href='#'>entre em contato conosco.</a>"
+
+  clients:
+    title: "Alguns de nossos clientes"
+
+  portfolio:
+    title: "Confira alguns de nossos INCRÍVEIS trabalhos"
+    work:
+      abril_title: "Pesquisa Nacional Abril"
+      abril_desc: "Pesquisa de mercado e comportamento vencedora do prêmio ABEMD."
+
+      claudia_title: "Pesquisa Revista Claudia"
+      claudia_desc: "Pesquisa de mercado para novos assinantes da revista Cláudia."
+
+      exame_title: "Pesquisa Revista Exame"
+      exame_desc: "Pesquisa de mercado e comportamento para a revista Exame."
+
+      listen_title: "Aplicação Web ListenToMyApp.com"
+      listen_desc: "Aplicação web para envio e notificação de eventos para a sua aplicação."
+      listen_visit: "Visite o site."
+
+      eletter_title: "e-Letter"
+      eletter_desc: "Aplicação web para envio e monitoramento de campanhas de email marketing."
+
+      assinatura_title: "Sistema de Assinaturas"
+      assinatura_desc: "Aplicação web para gerenciamento de assinaturas de revistas."
+ 
+      qrodas_title: "Hotsite Revista Quatro Rodas Experience"
+      qrodas_desc: "Hotsite de divulgação do evento Quatro Rodas Experience."
+
+      gloss_title: "Hotsite Revista Gloss"
+      gloss_desc: "Hotsite de lançamento da revista Gloss."
+
+      veja_title: "Hotsite Veja SP"
+      veja_desc: "Hotsite de divulgação da revista Veja SP, em eventos realizados em Campos do Jordão e Riviera de São Lourenço."
+
+      consulado_title: "Hotsite Consulado Espanhol"
+      consulado_desc: "Hotsite para captação de novos turistas para o Consulado Espanhol."
+
+
+  footer:
+    since: "2011 - 11 anos"
+    city: "São Paulo - Brasil"
+
+
+
+

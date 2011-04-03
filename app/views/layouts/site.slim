@@ -1,15 +1,16 @@
 doctype html
 html
   head
-    title Megon
-	meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
-	meta name="robots" content="index, follow"
-	meta name="Transformamos suas idéias em negócios - Criamos soluções web para ajudar você a atingir seus objetivos, utilizando Java, Ruby on Rails e JavaScript de forma ágil." content="description"
-	meta name="author" content="Megon"
+    title Megon - Soluções web em Java, Ruby on Rails e Javascript
+    meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+    meta name="robots" content="index, follow"
+    meta name="description" content="Transformamos suas idéias em negócios - Criamos soluções web para ajudar você a atingir seus objetivos, utilizando Java, Ruby on Rails e JavaScript de forma ágil."
+    meta name="author" content="Megon"
     meta name="keywords" content="megon, hotsite, pesquisas web, pesquisa comportamental, web design, usabilidade, web2.0, interface de usuário, experiência de uso, ui, ux, web 2.0, web2, ruby on rails, ruby, rails, mysql, métodos ágeis, agile programming, scrum, extreme programming, xp, ajax, javascript, aplicações web 2.0, sistemas web, desenvolvimento, marcelo Vitor f. Menezes, marcelo menezes, gnumarcelo, marcon antonio rojo marcondes, mrmarcondes, daniel fukuda, bruno roda, design, programação, arquitetura de informação"
+    = csrf_meta_tag
+    = stylesheet_link_tag 'main'
+    script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
 
-	= stylesheet_link_tag 'main'
-	script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
 
   body
     #content.example1
@@ -17,8 +18,9 @@ html
       == yield
       =render 'layouts/footer'
 
+
 	javascript:
-	  if (typeof jQuery == 'undefined') { document.write(unescape("%3Cscript src='js/jquery.js' type='text/javascript'%3E%3C/script%3E")); }
+	  if (typeof jQuery == 'undefined') { document.write(unescape("%3Cscript src='javascripts/jquery.js' type='text/javascript'%3E%3C/script%3E")); }
 
 	= javascript_include_tag 'jquery.scrollTo',      \
 	                         'jquery.nav.min',   \
@@ -31,11 +33,15 @@ html
 	  Cufon.replace('.slogan', {textShadow:'2px 2px #FFDF80'}); // Requires a selector engine for IE 6-7, see above
 
 	  $(document).ready(function() {
-		$('#nav').onePageNav();
-		  $('#teste').onePageNav();
+		  $('#nav').onePageNav();
+
+      $("#to_contact").click(function() {
+        $('#contact_link').click();
+      });
 		});
 
 		$("img").lazyload({
 		  placeholder : "images/grey.gif", 
 		     effect      : "fadeIn"
-		});	
+		});
+

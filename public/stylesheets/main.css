@@ -21,9 +21,10 @@ html {
   background: url(../images/fundo-laranja-pontilhado.jpg) repeat center top;
 }
 
-ol, ul {
-  list-style: none;
+.right {
+  float:right;
 }
+
 
 body {
   color:white;
@@ -40,6 +41,10 @@ body .wrapper {
 body p {
   text-shadow: 0 1px 1px white;
   color: #62666C
+}
+
+ol, ul {
+  list-style: none;
 }
 
 h1 {
@@ -67,11 +72,27 @@ h1.section_title {
 
 
 /********* SITE_MENU_AREA **********/
+#header {
+  margin: 0px;
+  position: fixed;
+  width: 100%;
+  min-width: 940px;
+  top: 0px;
+  height: 37px;
+  background-color: #000;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 0 6px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 6px 0;
+  -o-box-shadow: rgba(0, 0, 0, 0.5) 0 0 6px 0;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 6px 0;
+  /*border-bottom: 1px solid #FA1; */
+  z-index: 999;
+}
+
 #site_menu {
   width: 460px;
   display: block;
   float: left;
-  margin-top: 10px;
+  padding-top: 10px;
   margin-left: 95px;
   font-family: "ff-dax-web-pro-1","ff-dax-web-pro-2",Arial, Helvetica, sans-serif;
   font-size: 12px;
@@ -103,23 +124,11 @@ h1.section_title {
   color: #fff;
 }
 
+#header #language_bar {
+  padding-top: 13px;
+}
 
 /********* HOME_AREA **********/
-#header {
-  margin: 0px;
-  position: fixed;
-  width: 100%;
-  min-width: 940px;
-  top: 0px;
-  height: 37px;
-  background-color: #000;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 0 6px 0;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 6px 0;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 0 0 6px 0;
-  box-shadow: rgba(0, 0, 0, 0.5) 0 0 6px 0;
-  /*border-bottom: 1px solid #FA1; */
-  z-index: 999;
-}
 
 body #home{
   padding-top: 60px;
@@ -159,47 +168,47 @@ body #home{
 }
 
 /********* CLIENTES_AREA **********/
-body #clientes{
+body #clients{
   padding-top: 60px;  
   height: 600px;  
   background:url(../images/fundo-cinza-claro.jpg) repeat fixed center top #d7d6d5;
 }
-#clientes_top {
+#clients_top {
   background: url(../images/topo-clientes.jpg) repeat-x center top;
   height: 9px;
 }
 
 	/* Clients Showcase list */
-	#clientes-list {
+	#clients-list {
 	  list-style: none outside none;
 	  margin-top: 20px;
 	  width: 960px;  
 	}
 
-	#clientes_wrapper_info ul li {
+	#clients_wrapper_info ul li {
 	  display: inline;
 	  float: left;
 	  height: 155px;
 	  width: 320px;
 	}
 
-	#clientes_wrapper_info ul li img {
+	#clients_wrapper_info ul li img {
 	  display: block;
 	}
 
 
-/********* PORTIFOLIO_AREA **********/
-body #portifolio {
+/********* PORTFOLIO_AREA **********/
+body #portfolio {
   padding-top: 60px;  
   background-color: #ebece6;
 }
 
-#portifolio_top {
+#portfolio_top {
   background: url(../images/topo-listras-degrade.jpg) repeat-x center bottom;
   height: 10px;
 }
-	/* Portifolio Showcase list */
-	#portifolio_showcase_info p{
+	/* portfolio Showcase list */
+	#portfolio_showcase_info p{
 	  padding-top: 5px;
       word-spacing: 0.1em;
 	  clear:left;
@@ -211,14 +220,14 @@ body #portifolio {
 	  width: 960px;  
 	}
 
-	#portifolio_showcase_info ul li {
+	#portfolio_showcase_info ul li {
 	  display: inline;
 	  float: left;
 	  height: 335px;
 	  width: 320px;
 	}
 
-	#portifolio h3.portfolio_title_small {
+	#portfolio h3.portfolio_title_small {
 	  font-weight: bold;
 	  color: #151515;
 	  text-transform:uppercase;
@@ -234,7 +243,7 @@ body #portifolio {
 	  width: 285px;
 	}
 	
-	ul#portfolio-list li p.portifolio_tags {
+	ul#portfolio-list li p.portfolio_tags {
 	  font-weight: bold;
 	  color: #A0A0A0;
 	  text-transform:uppercase;
@@ -256,36 +265,36 @@ body #portifolio {
 	
 	
 /********* CONTATO_AREA **********/
-body #contato {
+body #contact {
   padding-top: 20px;  
   background-color: #FAC74D;
-  height: 280px;  
+  height: 350px;  
   background: url(../images/fundo-laranja-pontilhado.jpg) repeat center top;
 }
 
-#contato_top {
+#contact_top {
   background: url(../images/topo-sombra-transparente.png) repeat-x scroll center top transparent;
   height: 17px;  
 }
 
-#contato h1.section_title {
+#contact h1.section_title {
   color: #d36707;
 }
 
-#contato p {
+#contact p {
   font-size:16px;
   color: #000;
   text-shadow: 0 1px 1px white;
   display: block;
 }
 
-#contato a {
+#contact a {
   font-weight: bold;
   color: #000;
   text-shadow: 0 1px 1px white;
 }
 
-#contato a:hover {
+#contact a:hover {
   color: #fff;
 }
 

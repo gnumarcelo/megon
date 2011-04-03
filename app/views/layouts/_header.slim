@@ -3,7 +3,10 @@
     img height="23" width="156" src="images/megon-logo.png" alt="Megon" style="float: left; margin-top: 6px;"
     #site_menu.left
       ul#nav
-        li.current = link_to("home", '#home')
-        li = link_to("clientes", '#clientes')
-        li = link_to("portifolio", '#portifolio')
-        li = link_to("contato", '#contato')
+        li.current = link_to(t('header.nav.home'), '#home')
+        li = link_to(t('header.nav.clients'), '#clients')
+        li = link_to(t('header.nav.portfolio'), '#portfolio')
+        li = link_to(t('header.nav.contact'), '#contact', :id => 'contact_link')
+
+    #language_bar.right #{link_to(image_tag('flags/pt.gif', :size => '16x11'), '/pt', :title => 'Português')} #{link_to(image_tag('flags/en.gif', :size => '16x11'), '/en', :title => 'Inglês')}
+

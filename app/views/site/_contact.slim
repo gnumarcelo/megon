@@ -1,0 +1,20 @@
+#contact_top
+#contact
+  .wrapper
+    h1.section_title Entre em contato conosco
+    p Se você precisa de ajuda, orçamento ou gostaria simplesmente de dizer um Olá, escreva para <a class="contact_info" href="mailto:contato@megon.com.br">contato@megon.com.br</a>
+    form#contact_form name='contact_form' action='/contact' method='post'
+      = token_tag
+      #contact_us_content
+        = token_tag
+        fieldset
+          label for='contact_us_name' Nome
+          input#contact_us_name name='name' type='text'
+        fieldset
+          label for='contact_us_email' Email
+          input#contact_us_email name='email' type='text'
+        fieldset
+          label for='contact_us_message' Mensagem
+          textarea#contact_us_message name='message' type='text'
+        fieldset
+          button#send_button Enviar
